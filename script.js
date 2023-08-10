@@ -9,9 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Script for dynamic styling and interactions
+//dynamic styling and interactions
 document.addEventListener("DOMContentLoaded", function () {
-    // Apply different styles to content boxes
     const aboutBox = document.getElementById("aboutBox");
     styleBox(aboutBox, "#2ecc71", "#fff");
 
@@ -34,8 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         boxElement.style.backgroundColor = backgroundColor;
         boxElement.style.color = textColor;
     }
-
-    // Update progress bars
+    
     const htmlProgressBar = document.querySelector("#skillsBox .html .progressBar");
     const cssProgressBar = document.querySelector("#skillsBox .css .progressBar");
     const jsProgressBar = document.querySelector("#skillsBox .js .progressBar");
@@ -47,6 +45,4 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateProgressBar(progressBarElement, percentage) {
         progressBarElement.style.width = percentage + "%";
     }
-    
-    // Your additional JavaScript interactions or animations here, if needed
 });
